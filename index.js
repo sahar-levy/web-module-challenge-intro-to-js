@@ -37,8 +37,14 @@ Do the following:
    HINT: no function required
 */
 
+const firstThing = 10;
+const secondThing = 10;
 
-
+if (firstThing !== secondThing) {
+  console.log(true);
+} else {
+  console.log(firstThing);
+}
 
 
 /*
