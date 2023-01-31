@@ -20,8 +20,11 @@ Do the following:
    HINT: no function required
 */
  const votingAge = 18;
+
  if (votingAge >= 18) {
-  console.log(true);
+  console.log('Task 1a:' , true);
+ } else {
+  console.log('Task 1a:' , false);
  }
 
 
@@ -37,13 +40,13 @@ Do the following:
    HINT: no function required
 */
 
-const firstThing = 10;
-const secondThing = 10;
+let firstThing = 10;
+let secondThing = 10;
 
 if (firstThing !== secondThing) {
-  console.log(true);
+  console.log('Task 1b:' , true);
 } else {
-  console.log(firstThing);
+  console.log('value from task 1b:' , firstThing);
 }
 
 
@@ -58,7 +61,8 @@ Do the following:
    HINT: look up the Number method
 */
 
-
+const year = '1999';
+console.log('Task 1c:', Number(year));
 
 
 /*
