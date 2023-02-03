@@ -151,12 +151,12 @@ function hungryDog(weight, age){
     return weight * 0.03;
   } else if (age >= 1 && weight > 15) {
     return weight * 0.02;
-  } else if (age > 1 && age >= 0.583) {
+  } else if (age < 1 && age >= 0.583) {
     return weight * 0.04;
-  } else if (age < 0.583 && age >= 0.333) {
-    return age * 0.05;
-  } else if (age < 0.333) {
-    return age * 0.10;
+  } else if (age <= 0.583 && age >= 0.333) {
+    return weight * 0.05;
+  } else if (age <= 0.333 && age >= 0.167) {
+    return weight * 0.10;
   } else {
     return 'Please try again.';
   }
@@ -260,9 +260,14 @@ Using the annoyingSong function below do the following:
 4. Each time the annoyingSong is run from this loop, it should console.log the string that was returned. 
 */
 
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+function annoyingSong(number){
+  for (let i = number; i > 0; i --){
+    return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i - 1} bottles of soda on the wall`;
+  }
 }
+
+console.log('Task 6:', annoyingSong(3));
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
