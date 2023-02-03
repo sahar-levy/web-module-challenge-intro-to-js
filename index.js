@@ -285,10 +285,20 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
-/*Your Code here */
+function grade(points){
+  if (points <= 100 && points >=90){
+    return 'you got an A';
+  } else if (points <= 89 && points >= 80){
+    return 'you got a B';
+  } else if (points <= 79 && points >= 70){
+    return 'you got a C';
+  } else if (points <= 69 && points >= 60){
+    return 'you got a D';
+  } else {
+    return 'you got an F';
+  }
 }
-
+console.log('Task 7:', grade(95));
 
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
