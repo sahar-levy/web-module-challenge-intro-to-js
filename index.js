@@ -228,7 +228,7 @@ Using the miles function below do the following:
 */
 
 function miles(kilometers){
-  return kilometers / 1000;
+  return kilometers * 0.621371;
 }
 console.log('Task 5a:', miles(5), 'miles');
 
@@ -313,9 +313,9 @@ HINT - you may need to study tomorrow's content on arrays
 HINT - try looking up the .includes() method
 */
 
-
-function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
+const vowels = ['A', 'a', 'E', 'e', 'I', 'i', 'O', 'o', 'U', 'u'];
+function vowelCounter(string) {
+  
 }
 
 
