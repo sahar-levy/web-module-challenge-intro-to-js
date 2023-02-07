@@ -313,11 +313,19 @@ HINT - you may need to study tomorrow's content on arrays
 HINT - try looking up the .includes() method
 */
 
-const vowels = ['A', 'a', 'E', 'e', 'I', 'i', 'O', 'o', 'U', 'u'];
 function vowelCounter(string) {
-  
+  const vowels = ["A", "E", "I", "O", "U", "a", "e", "i", "o", "u"];
+  let count = 0;
+  for (let i = 0; i < vowels.length; i++) {
+    if (string.includes(vowels[i])) {
+      count++
+    }
+    console.log(string.includes(vowels[i]));
+  }
+  return count;
 }
-
+const result = vowelCounter("hello");
+console.log(result);
 
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
